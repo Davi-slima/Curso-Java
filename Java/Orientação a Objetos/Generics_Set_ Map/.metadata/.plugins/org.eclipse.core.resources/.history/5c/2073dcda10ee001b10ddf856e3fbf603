@@ -1,0 +1,16 @@
+package application;
+
+import entities.No;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		No no1 = new No("Conteúdo No1");
+		
+		No no2 = new No("Conteúdo No2");
+		no1.setProxioNo(no2);
+		
+	}
+
+}

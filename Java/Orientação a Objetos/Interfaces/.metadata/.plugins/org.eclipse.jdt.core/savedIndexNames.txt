@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Interfaces\.metadata\.plugins\org.eclipse.jdt.core
+1076347232.index
+506678073.index
+4115304755.index
+3448535415.index
+468479095.index
+486901442.index
+2024917932.index

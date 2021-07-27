@@ -1,0 +1,17 @@
+package application;
+
+import application.entities.Fila;
+import application.entities.No;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Fila fila = new Fila();
+		
+		fila.enqueue(new No("Primeiro valor"));
+		
+		System.out.println(fila);
+	}
+
+}

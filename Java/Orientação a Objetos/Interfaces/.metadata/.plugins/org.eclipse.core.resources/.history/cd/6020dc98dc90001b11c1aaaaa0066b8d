@@ -1,0 +1,13 @@
+package model.services;
+
+public class PypalService implements OnlinePaymentService {
+	
+	public double paymentFree(double amount) {
+		
+	}
+	
+	public double interest(double amount, Integer months) {
+		return 1.0;
+	}
+	
+}

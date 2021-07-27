@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Programação funcional e expressões lambda\Interface funcional\Function\.metadata\.plugins\org.eclipse.jdt.core
+2410461695.index
+2239561536.index
+4171991401.index
+298331228.index
+1310736512.index
+1724849354.index

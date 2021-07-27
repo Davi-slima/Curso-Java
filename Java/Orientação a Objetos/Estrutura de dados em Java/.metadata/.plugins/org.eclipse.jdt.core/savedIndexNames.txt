@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Comportamento de memória\.metadata\.plugins\org.eclipse.jdt.core
+2425518984.index
+2005355746.index
+661563637.index
+171521544.index

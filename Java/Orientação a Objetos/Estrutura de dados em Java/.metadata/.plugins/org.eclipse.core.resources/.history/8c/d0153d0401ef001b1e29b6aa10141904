@@ -1,0 +1,18 @@
+package application;
+
+import application.entities.ListaCircular;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		ListaCircular<String> minhaLista = new ListaCircular<>();
+		
+		minhaLista.add("C0");
+		System.out.println(minhaLista);
+		
+		minhaLista.remove(0);
+		System.out.println(minhaLista);
+	}
+
+}

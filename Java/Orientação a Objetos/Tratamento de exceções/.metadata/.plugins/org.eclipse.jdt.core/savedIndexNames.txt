@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Tratamento de exceções\.metadata\.plugins\org.eclipse.jdt.core
+708036000.index
+826628092.index
+1668016437.index
+395851145.index
+3822007259.index
+2706684384.index
+118599077.index

@@ -1,0 +1,22 @@
+package poo.model;
+
+public class Pessoa {
+	
+	public enum tipoPessoa {FISICA, JURIDICA}
+	
+	public Integer codigo;
+	public String nome;
+	private String documento;
+	public tipoPessoa tipo;
+	
+	public String getDocumento() {
+		return documento;
+	}
+	public void setDocumento(String documento) {
+		if (documento == null || documento.isEmpty()) {
+			throw new RuntimeException("O documento não pode ser nulo ou vazio!");
+		}
+		this.documento = documento;
+	}
+
+}

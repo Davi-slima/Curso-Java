@@ -1,0 +1,34 @@
+package application.entities;
+
+public class Fila {
+	
+	private No refEntradaFila;
+	
+	public Fila() {
+		this.refEntradaFila = null;
+	}
+	
+	public void enqueue(No novoNo) {
+		novoNo.setRefNo(refEntradaFila);
+		refEntradaFila = novoNo;
+	}
+	
+	public No first() { // Retorna o primeiro elemento da fila
+		if (!isEmpty()) {
+			No primeiroNo = refEntradaFila;
+			while (true) {
+				if (primeiroNo.getObj() != null) {
+					primeiroNo = primeiroNo.getRefNo();
+				}else {
+					break;
+				}
+			}
+		}
+		return null;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaFila == null ? true : false;
+	}
+
+}

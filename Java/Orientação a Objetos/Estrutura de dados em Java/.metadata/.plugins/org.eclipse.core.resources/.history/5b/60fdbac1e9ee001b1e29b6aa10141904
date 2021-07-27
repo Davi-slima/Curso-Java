@@ -1,0 +1,31 @@
+package application.entities;
+
+public class ListaCircular<T> {
+	
+	private No<T> cabeca;
+	private No<T> cauda;
+	private int tamanhoLista;
+	
+	private No<T> getNo(int index) {
+		if (this.isEmpty()) {
+			throw new IndexOutOfBoundsException("A lista está vazia.");
+		}
+		if (index == 0) {
+			return cauda;
+		}
+		No<T> noAux = cauda;
+		for (int i = 0; (i < index) && (noAux != null); i++) {
+			noAux = noAux.getProxNo();
+		}
+		return noAux;
+	}
+	
+	public int size() {
+		return tamanhoLista;
+	}
+	
+	public boolean isEmpty() {
+		return tamanhoLista == 0 ? true : false;
+	}
+
+}

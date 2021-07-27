@@ -1,0 +1,79 @@
+package application.entities;
+
+public class Fila {
+	
+	private No refEntradaFila;
+	
+	public Fila() {
+		this.refEntradaFila = null;
+	}
+	
+	public void enqueue(Object obj) { // Adiciona um novo elemento no final da fila
+		No novoNo = new No();
+		novoNo.setRefNo(refEntradaFila);
+		refEntradaFila = novoNo;
+	}
+	
+	public Object dequeue() { // Remove o primeiro elemento da fila
+		if (!isEmpty()) {
+			No primeiroNo = refEntradaFila;
+			No noAuxiliar = refEntradaFila;
+			
+			while (true) {
+				if (primeiroNo.getRefNo() != null) {
+					noAuxiliar = primeiroNo;
+					primeiroNo = primeiroNo.getRefNo();
+				}else {
+					noAuxiliar.setRefNo(null);
+					break;
+				}
+			}
+			return primeiroNo.getObj();
+		}
+		return null;
+	} 
+	
+	public Object first() { // Retorna o primeiro elemento da fila
+		if (!isEmpty()) {
+			No primeiroNo = refEntradaFila;
+			while (true) {
+				if (primeiroNo.getRefNo() != null) {
+					primeiroNo = primeiroNo.getRefNo();
+				}else {
+					break;
+				}
+			}
+			return primeiroNo.getObj();
+		}
+		return null;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaFila == null ? true : false;
+	}
+
+	@Override
+	public String toString() {
+		String retorno = "";
+		No noAuxiliar = refEntradaFila;
+		
+		if (refEntradaFila != null) {
+			while (true) {
+				retorno += "[ { dado = " + noAuxiliar.getObj() + " } ] --->";
+				if (noAuxiliar.getRefNo() != null) {
+					noAuxiliar = noAuxiliar.getRefNo(); // Passa para o Próximo nó
+				}else {
+					retorno += "É Null";
+					break;
+				}
+			}
+		}else {
+			retorno += "É Null";
+		}
+		
+		return retorno;
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package model.entities;
+
+spublic interface Shape {
+	
+	public abstract double area();
+
+}

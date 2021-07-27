@@ -1,0 +1,34 @@
+package application;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import db.DB;
+import db.DbIntegrityException;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+//		---> DEMO - TRANSAÇÃO DE DADOS <---		//
+		
+		Connection conn = null;
+		Statement st = null;
+		try {
+			conn = DB.getConnection();
+			
+			
+			
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
+	}
+
+}

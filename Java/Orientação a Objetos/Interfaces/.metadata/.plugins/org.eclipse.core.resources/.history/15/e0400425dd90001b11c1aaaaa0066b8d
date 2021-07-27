@@ -1,0 +1,14 @@
+package model.services;
+
+import model.entities.Contract;
+
+public class ContractPayment {
+	
+	private OnlinePaymentService onlinePaymentService;
+
+	public ContractPayment(OnlinePaymentService onlinePaymentService) {
+		this.onlinePaymentService = onlinePaymentService;
+	}
+
+	
+}

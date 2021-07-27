@@ -1,0 +1,50 @@
+package application.entities;
+
+public class Lista<T> {
+	
+	No<T> refEntradaLista;
+	
+	public Lista() {
+		this.refEntradaLista = null;
+	}
+	
+	public void add(T conteudo) {
+		No<T> novoNo = new No<>(conteudo);
+		if (this.isEmpty()) {
+			refEntradaLista = novoNo;
+			return;
+		}
+		No<T> noAux = refEntradaLista;
+		for (int i = 0; i < this.size() - 1; i++) { // Todos os Nós lista serão percorridos 
+			noAux = noAux.getProximoNo();
+		}
+		noAux.setProximoNo(novoNo);
+	}
+	
+	// Tamanho da lista
+	
+	public int size() {
+		int tamanhoLista = 0;
+		No<T> refAux = refEntradaLista;
+		
+		while (true) {
+			if (refAux != null) {
+				tamanhoLista ++;
+				if (refAux.getProximoNo() != null) {
+					refAux = refAux.getProximoNo();
+				}else {
+					break;
+				}
+			}else {
+				break;
+			}
+		}
+		
+		return tamanhoLista;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaLista == null ? true : false;
+	}
+	
+}

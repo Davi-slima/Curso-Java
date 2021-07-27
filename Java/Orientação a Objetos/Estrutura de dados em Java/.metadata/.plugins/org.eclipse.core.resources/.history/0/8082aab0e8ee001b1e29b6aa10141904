@@ -1,0 +1,15 @@
+package application.entities;
+
+public class ListaCircular<T> {
+	
+	private No<T> refEntrada;
+	
+	public ListaCircular() {
+		this.refEntrada = null;
+	}
+	
+	public boolean isEmpty() {
+		return refEntrada == null ? true : false;
+	}
+
+}

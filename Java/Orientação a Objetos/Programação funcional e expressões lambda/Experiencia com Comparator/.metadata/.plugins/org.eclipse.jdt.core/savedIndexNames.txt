@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Programação funcional e expressões lambda\Experiencia com Comparator\.metadata\.plugins\org.eclipse.jdt.core
+1321405251.index
+60663686.index

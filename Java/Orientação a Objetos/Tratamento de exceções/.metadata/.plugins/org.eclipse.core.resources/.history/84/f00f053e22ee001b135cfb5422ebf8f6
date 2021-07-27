@@ -1,0 +1,11 @@
+package application.entities;
+
+public class Fila {
+	
+	private No refEntradaFila;
+	
+	public Fila() {
+		this.refEntradaFila = null;
+	}
+
+}

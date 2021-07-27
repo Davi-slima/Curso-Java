@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Generics_Set_ Map\Sets\.metadata\.plugins\org.eclipse.jdt.core
+1513623192.index
+3274792738.index
+3708856636.index
+2922909983.index
+3462112099.index
+1822600902.index

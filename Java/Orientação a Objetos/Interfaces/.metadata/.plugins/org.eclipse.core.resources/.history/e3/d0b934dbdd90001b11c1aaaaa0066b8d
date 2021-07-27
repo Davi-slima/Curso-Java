@@ -1,0 +1,16 @@
+package model.services;
+
+import model.entities.Contract;
+
+public class ContractPayment {
+	
+	private OnlinePaymentService onlinePaymentService;
+
+	public ContractPayment(OnlinePaymentService onlinePaymentService) {
+		this.onlinePaymentService = onlinePaymentService;
+	}
+
+	public void processContract(Contract contract, int months) {
+		double basicQuota = contract.getTotalValue() / months;
+	}
+}

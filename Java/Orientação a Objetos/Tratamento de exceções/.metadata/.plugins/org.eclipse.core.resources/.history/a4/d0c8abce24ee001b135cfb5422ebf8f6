@@ -1,0 +1,53 @@
+package application.entities;
+
+public class Fila {
+	
+	private No refEntradaFila;
+	
+	public Fila() {
+		this.refEntradaFila = null;
+	}
+	
+	public void enqueue(No novoNo) { // Adiciona um novo elemento no final da fila
+		novoNo.setRefNo(refEntradaFila);
+		refEntradaFila = novoNo;
+	}
+	
+	public No dequeue() { // Remove o primeiro elemento da fila
+		if (!isEmpty()) {
+			No primeiroNo = refEntradaFila;
+			No noAuxiliar = refEntradaFila;
+			
+			while (true) {
+				if (primeiroNo.getObj() != null) {
+					noAuxiliar = primeiroNo;
+					primeiroNo = primeiroNo.getRefNo();
+				}else {
+					noAuxiliar.setRefNo(null);
+					break;
+				}
+			}
+			return primeiroNo;
+		}
+		return null;
+	} 
+	
+	public No first() { // Retorna o primeiro elemento da fila
+		if (!isEmpty()) {
+			No primeiroNo = refEntradaFila;
+			while (true) {
+				if (primeiroNo.getObj() != null) {
+					primeiroNo = primeiroNo.getRefNo();
+				}else {
+					break;
+				}
+			}
+		}
+		return null;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaFila == null ? true : false;
+	}
+
+}

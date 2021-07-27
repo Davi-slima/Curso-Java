@@ -1,0 +1,23 @@
+package model.services;
+
+import java.util.Date;
+
+import model.entities.Contract;
+
+public class ContractPayment {
+	
+	private OnlinePaymentService onlinePaymentService;
+
+	public ContractPayment(OnlinePaymentService onlinePaymentService) {
+		this.onlinePaymentService = onlinePaymentService;
+	}
+
+	public void processContract(Contract contract, int months) {
+		double basicQuota = contract.getTotalValue() / months;
+		
+	for (int i = 1; i <= months; i++) {
+		Date date = addMonths(contract.getDate(), i);
+		double updateQuota = basicQuota + onlinePaymentService.interest(basicQuota, i);
+	}
+	}
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\course\.metadata\.plugins\org.eclipse.jdt.core
+591744942.index
+2112246634.index

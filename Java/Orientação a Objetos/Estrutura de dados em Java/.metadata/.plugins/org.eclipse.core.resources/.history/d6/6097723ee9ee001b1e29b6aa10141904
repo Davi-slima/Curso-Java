@@ -1,0 +1,17 @@
+package application.entities;
+
+public class ListaCircular<T> {
+	
+	private No<T> cabeca;
+	private No<T> Cauda;
+	private int tamanhoLista;
+	
+	public int size() {
+		return this.tamanhoLista;
+	}
+	
+	public boolean isEmpty() {
+		return tamanhoLista == 0 ? true : false;
+	}
+
+}

@@ -1,0 +1,36 @@
+package entities;
+
+public class No {
+	
+	private String conteudo;
+	private No proxioNo;
+	
+	public No(String conteudo) {
+		this.proxioNo = null;
+		this.conteudo = conteudo;
+	}
+
+	public String getConteudo() {
+		return conteudo;
+	}
+
+	public void setConteudo(String conteudo) {
+		this.conteudo = conteudo;
+	}
+
+	public No getProxioNo() {
+		return proxioNo;
+	}
+
+	public void setProxioNo(No proxioNo) {
+		this.proxioNo = proxioNo;
+	}
+
+	@Override
+	public String toString() {
+		return "No { conteudo = " + conteudo + " }";
+	}
+	
+	
+
+}

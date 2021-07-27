@@ -1,0 +1,11 @@
+package model.services;
+
+import model.entities.Contract;
+
+public class ContractPayment {
+
+	public void processContract(Contract contract, int months) {
+		
+	}
+	
+}

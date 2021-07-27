@@ -1,0 +1,20 @@
+package services;
+
+public class BrazilInterestService {
+	
+	private Double interestRate;
+	
+	public BrazilInterestService(Double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	public double getInterestRate(Double interestRate) {
+		return interestRate;
+	}
+	
+	
+	public double payment(double amount, int months) {
+		return 
+	}
+
+}

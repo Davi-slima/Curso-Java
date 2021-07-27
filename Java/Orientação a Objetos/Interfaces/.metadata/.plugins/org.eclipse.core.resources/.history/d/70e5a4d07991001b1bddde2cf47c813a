@@ -1,0 +1,12 @@
+package services;
+
+public class BrazilInterestService {
+	
+	private Double interestRate;
+	
+	
+	public double payment(double amount, int months) {
+		return 
+	}
+
+}

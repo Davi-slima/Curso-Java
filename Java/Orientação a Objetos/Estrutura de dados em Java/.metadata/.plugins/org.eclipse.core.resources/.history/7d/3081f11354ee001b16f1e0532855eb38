@@ -1,0 +1,18 @@
+package application.entities;
+
+public class Lista<T> {
+	
+	private NoDuplo<T> primeiroNo;
+	private NoDuplo<T> ultimoNo;
+	private int tamanhoLista;
+	
+	public Lista() {
+		this.primeiroNo = null;
+		this.ultimoNo = null;
+		this.tamanhoLista = 0
+	}
+	
+	public int size() {
+		
+	}
+}

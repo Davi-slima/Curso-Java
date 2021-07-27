@@ -1,0 +1,22 @@
+package application.entities;
+
+public class Fila {
+	
+	private No refEntradaFila;
+	
+	public Fila() {
+		this.refEntradaFila = null;
+	}
+	
+	public 
+	
+	public void enqueue(No novoNo) {
+		novoNo.setRefNo(refEntradaFila);
+		refEntradaFila = novoNo;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaFila == null ? true : false;
+	}
+
+}

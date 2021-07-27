@@ -1,0 +1,11 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		String[] lines = new String[] {"Bom dia", "Boa tarde", "Boa noite"};
+		
+	}
+
+}

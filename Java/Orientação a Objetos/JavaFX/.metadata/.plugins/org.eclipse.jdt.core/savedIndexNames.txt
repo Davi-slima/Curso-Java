@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\JavaFX\.metadata\.plugins\org.eclipse.jdt.core
+3511911525.index
+1680709211.index
+2499878056.index
+1136108621.index
+24605232.index
+3759043560.index
+2774702086.index
+2115795524.index
+1224767621.index
+2025847190.index

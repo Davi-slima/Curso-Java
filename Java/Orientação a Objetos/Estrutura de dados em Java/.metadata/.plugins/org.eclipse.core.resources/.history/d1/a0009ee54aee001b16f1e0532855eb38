@@ -1,0 +1,17 @@
+package application;
+
+import application.entities.Lista;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Lista<String> minhaListaEncadeada = new Lista<>();
+		
+		minhaListaEncadeada.add("Test 1");
+		minhaListaEncadeada.add("Test 2");
+		minhaListaEncadeada.add("Test 3");
+		minhaListaEncadeada.add("Test 4");
+	}
+
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Davi\Desktop\Udemy\Java Orientação a objetos\Generics_Set_ Map\Curinga\.metadata\.plugins\org.eclipse.jdt.core
+818533633.index
+2847966395.index

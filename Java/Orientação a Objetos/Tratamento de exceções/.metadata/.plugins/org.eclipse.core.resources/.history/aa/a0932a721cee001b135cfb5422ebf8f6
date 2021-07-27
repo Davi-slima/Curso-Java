@@ -1,0 +1,15 @@
+package application;
+
+import entities.No;
+import entities.Pilha;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Pilha pilha = new Pilha();
+		
+		pilha.push(new No(1));
+		
+	}
+}

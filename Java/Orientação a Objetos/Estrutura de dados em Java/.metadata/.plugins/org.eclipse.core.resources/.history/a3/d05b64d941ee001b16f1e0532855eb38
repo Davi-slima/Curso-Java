@@ -1,0 +1,35 @@
+package application.entities;
+
+public class Lista<T> {
+	
+	No<T> refEntradaLista;
+	
+	public Lista() {
+		this.refEntradaLista = null;
+	}
+
+	public int size() {
+		int tamanhoLista = 0;
+		No<T> refAux = refEntradaLista;
+		
+		while (true) {
+			if (refAux != null) {
+				tamanhoLista ++;
+				if (refAux.getProximoNo() != null) {
+					refAux = refAux.getProximoNo();
+				}else {
+					break;
+				}
+			}else {
+				break;
+			}
+		}
+		
+		return tamanhoLista;
+	}
+	
+	public boolean isEmpty() {
+		return refEntradaLista == null ? true : false;
+	}
+	
+}
