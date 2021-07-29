@@ -66,6 +66,4 @@ public class Product implements Comparable<Product> {
 	public int compareTo(Product other) {
 		return name.toUpperCase().compareTo(other.getName().toUpperCase());
 	}
-	
-	
 }

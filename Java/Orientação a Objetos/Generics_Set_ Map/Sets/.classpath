@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Compara_elementos/src"/>
+	<classpathentry kind="src" path="Demo_1/src"/>
+	<classpathentry kind="src" path="Demo_2/src"/>
+	<classpathentry kind="src" path="Exercicio_de_fixacao/src"/>
+	<classpathentry kind="src" path="Exercicio_resolvido/src"/>
+	<classpathentry kind="src" path="Test_igualdade/src"/>
+	<classpathentry kind="output" path="Compara_elementos/bin"/>
+</classpath>
